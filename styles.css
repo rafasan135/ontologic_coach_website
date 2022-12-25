@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0;
+    --Kumbh:'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+    z-index: 100;
+    background-color: rgba(43, 96, 105, 0.8);  
+}
+
+.menu {
+    display: inherit;
+    list-style: none;
+    font-family: var(--Kumbh);
+    font-weight:100;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.menu_link:hover {
+    transition: 200ms;
+    transform: scale(110%);
+}
+
+li {
+    display: inherit;
+    padding: 0 1.1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.toggle_menu {
+    display: none;
+}
+
+.logo_div {
+    display: flex;
+
+}
+
+.logo_svg {
+    width: 80%;
+    padding: 1.5vh;
+}
+
+.hero_section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/backgrounds/hero_background.jpg);
+    background-size: cover;
+}
+
+.hero_section_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero_h1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--Kumbh);
+    font-weight:500;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+
+}
+
+.hero_paragraph {
+    color: rgba(255, 255, 255, 0.95);
+    font-family: var(--Kumbh);
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    width: 40vw;
+    padding-top: 1rem;
+}
+
+.div_btn_hero {
+    display: flex;
+}
+
+.servicios_btn {
+    display: inline-flex;
+    background-color: rgba(43, 96, 105, 0.9);  
+    font-family: var(--Kumbh);
+    color: white;
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 2rem 0.7rem 2rem 0;
+    min-width: 130px;
+    justify-content: center;
+}
+
+.servicios_btn:hover {
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.5);
+    transform: scale(105%);
+}
+
+.hero_cta {
+    display:inline-flex;
+    background-color: white;
+    font-family: var(--Kumbh);
+    color: black;
+    border: 0.5px solid white;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+.hero_cta:hover {
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.7);
+    transform: scale(105%);
+}
+
+/* Section Servicios */
+
+.section_servicios {
+    background: rgba(204, 217, 219, 1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.servicios_div {
+    padding: 20vh 8vw;
+}
+
+.tittle_servicios {
+    font-family: var(--Kumbh);
+    font-size: 3rem;
+    color: #333461;
+    padding-bottom: 10vh;
+}
+
+.card_servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.card_img {
+    width: 100px
+}
+
+.h3_card {
+    font-family: var(--Kumbh);
+    font-weight: 400;
+    color: #041434;
+    font-size: 1.7rem;
+    height:fit-content;
+    padding: 1.2rem 0;
+}
+
+.paragraph_card {
+    font-family: var(--Kumbh);
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+/* Section Sobre mi */
+
+.section_sobremi {
+    width: 100vw;
+}
+
+.sobremi_div {
+    display: flex;
+    padding: 18vh 8vw 1.9vh;
+}
+
+.sobremi_textbox {
+    height: 100%;
+    width: 100%;
+    padding-right: 1.5vw;
+}
+
+.h3_sobremi {
+    font-family: var(--Kumbh);
+    font-size: 4rem;
+    font-weight: 300;
+    color: rgba(51, 52, 97, 0.9);
+    padding-bottom: 3vh;
+}
+
+.paragraph_sobremi {
+    font-family: var(--Kumbh);
+    font-size: 1.3rem;
+    color:rgba(0, 0, 0, 0.7);
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.profile_image_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile_image {
+    position: relative;
+    top: 5vh;
+    width: 18vw;
+}
+
+.h4_sobremi {
+    font-family: var(--Kumbh);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    color: rgba(51, 52, 97, 0.9);
+    padding-bottom: 10px;
+}
+
+.logo_box {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    padding-left: 7vw;
+}
+
+.logo_uba_img, .logo_utn_img, .logo_udemy_img {
+    width: 100%;
+    padding: 0 7px 0;
+    }
+
+/* Section Blog */
+
+.section_blog {
+    width: 100vw;
+    background-color: #D5E9ED;
+}
+
+.h2_blog {
+    display: flex;
+    font-family: var(--Kumbh);
+    font-size: 3rem;
+    color:rgba(51, 52, 97, 0.9);
+    padding: 18vh 7vw 7vh;
+    justify-content: center;
+}
+
+.card_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto 18vh;
+    column-gap: 1.2rem;
+    padding: 0 7vw;
+}
+
+.card_box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 7px;
+    max-width: 300px;
+    justify-self: center;
+    transition: 280ms;
+
+}
+
+.card_box:hover {
+    transform: scale(103%);
+    transition: 280ms;
+    cursor: pointer;
+}
+
+.img_blog {
+    width: 100%;
+    max-height: 140px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.h3_card_blog {
+    font-family: var(--Kumbh);
+    font-size: 1.3rem;
+    color:rgba(51, 52, 97, 1);
+    height: 5rem;
+    padding-top: 0.7rem;
+    text-align: center;
+}
+
+.p_blog {
+    padding: 10px 1vw;
+    font-family: var(--Kumbh);
+    color: rgba(0, 0, 0, 0.75)
+}
+
+.btn_card {
+    font-family: var(--Kumbh);
+    font-size: 1.1rem;
+    font-style: italic;
+    padding: 1vw;
+    color: #000000b3;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items:flex-end;
+}
+
+.btn_visitamiblog {
+    display: flex;
+    font-family: var(--Kumbh);
+    background-color: rgb(32, 173, 150);
+    color: rgba(0, 0, 0, 0.85);
+    margin: 5vh auto;
+    grid-column: 2/3;
+    width:max-content;
+    height:max-content;
+    padding: 0.7rem 2.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+
+.btn_visitamiblog:hover {
+    background-color: rgba(32, 173, 150, 0.65);
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.btn_visitamiblog:active {
+    transform: scale(97%);
+}
+
+/* Section Contacto */
+
+.section_contacto {
+    width: 100vw;
+    height: 100%;
+}
+
+.h2_contacto {
+    display: flex;
+    font-family: var(--Kumbh);
+    font-size: 3rem;
+    color:rgba(51, 52, 97, 0.9);
+    padding: 18vh 7vw 7vh;
+    justify-content: center;
+}
+
+.contacto_box {
+    display: flex;
+    width: 86vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.contacto_form {
+    width: 30%;
+    height: 50%;
+    display: grid;
+    gap: 10px;
+    padding: 0 1.2rem 0 1.2rem;
+}
+
+.contact_ilustration {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.contact_ilustration_img {
+
+}
+
+.contact_information {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.contacto_icon {
+    padding: 0.5rem 1rem;
+}
+
+.contacto_txt {
+    display: flex;
+    align-items: center;
+    font-family: var(--Kumbh);
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.direccion_div {
+    display: flex;
+}
+
+.contacto_form_tittle {
+    font-family: var(--Kumbh);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.form_input {
+    background-color: rgba(193, 232, 226, 0.5);
+    border: none;
+    height: 30px;
+}
+
+.form_input_txt {
+    background-color: rgba(193, 232, 226, 0.5);
+    border: none;
+    height: 180px;
+}
+
+.form_input::placeholder {
+    font-family: var(--Kumbh);
+    color:rgba(0, 0, 0, 0.35)
+}
+
+.form_input_txt::placeholder {
+    font-family: var(--Kumbh);
+    color:rgba(0, 0, 0, 0.35)
+}
+
+.form_cta {
+    background-color: #20AD96;
+    border: none;
+    width:fit-content;
+    display: flex;
+    justify-self: center;
+    font-family: var(--Kumbh);
+    color: white;
+    padding: 0.3rem 1.9rem;
+    border-radius: 7px;
+    transition: 200ms;
+}
+
+.form_cta:hover {
+    transform: scale(103%);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1140px) {
+    .menu {
+        font-size: 0.9rem;
+        font-size: 400;
+    }
+}
+
+@media (max-width: 1024px) {
+.menu {
+    display: flex;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 0;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #333333;
+    font-size: 2rem;
+    transition: 500ms;
+    padding: 50px;
+    transform:translateY(-100%);
+    width: 100vw;
+    opacity: 0.92;
+}
+
+.menu--show {
+    transform:translateY(0);
+    width: 100vw;
+}  
+
+.toggle_menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 5vw;
+    z-index: 100;
+}   
+
+
+.contact_ilustration_img {
+    display: none;
+}
+
+.contacto_box {
+    flex-direction: column;
+}
+
+.contacto_form {
+    align-self: center;
+    width: 50%;
+    padding-bottom: 4vh;
+}
+
+.paragraph_sobremi {
+    font-size: 0.9rem;
+    width: 95%;
+}
+
+.section_sobremi {
+    height: 100vh;
+}
+}
+
+@media (max-width: 800px) {
+
+.h2_blog {
+    text-align: center;
+}
+
+.card_section {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: 1fr 1fr 1fr 120px;
+    row-gap: 30px;
+}
+
+.btn_visitamiblog {
+    grid-column:auto;
+}
+
+}
+
+@media (max-width: 600px) {
+    .hero_h1 {
+        font-size: 2rem;
+    }
+
+    .section_servicios {
+        height:auto;
+    }
+
+    .tittle_servicios {
+        text-align: center;
+    }
+
+    .card_servicios {
+        grid-template-columns: 60vw;
+            justify-content: center;
+    }
+
+    .card {
+        align-items: center;
+        width: 60vw;
+        padding-bottom: 3vh;
+        border: 1 solid gray;
+    }
+
+    .paragraph_card {
+        width: 45vw;
+        text-justify: center;
+    }
+
+    .profile_image {
+        display: none;
+    }
+
+    .contacto_form {
+        width: 80%;
+    }
+
+    .h3_card {
+        text-align: center;
+    }
+
+}
