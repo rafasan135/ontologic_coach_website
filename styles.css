@@ -188,6 +188,7 @@ a {
 
 .section_sobremi {
     width: 100vw;
+    height: auto;
 }
 
 .sobremi_div {
@@ -553,7 +554,20 @@ a {
         font-size: 2rem;
     }
 
-    .section_servicios {
+    .div_btn_hero {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .servicios_btn {
+        margin 0;
+
+    }
+
+    .hero_cta {
+    }
+
+    .section_servicios, .section_sobremi {
         height:auto;
     }
 
@@ -584,6 +598,10 @@ a {
 
     .contacto_form {
         width: 80%;
+    }
+
+    .contact_ilustration {
+        display: none;
     }
 
     .h3_card {
