@@ -517,6 +517,8 @@ a {
 .contacto_form {
     align-self: center;
     width: 50%;
+    height: auto;
+
     padding-bottom: 4vh;
 }
 
