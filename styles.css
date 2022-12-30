@@ -272,6 +272,7 @@ a {
     grid-auto-rows: auto 18vh;
     column-gap: 1.2rem;
     padding: 0 7vw;
+    justify-content: center;
 }
 
 .card_box {
